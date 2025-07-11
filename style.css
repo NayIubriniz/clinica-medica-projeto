@@ -1,0 +1,174 @@
+body{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-family: poppins;
+    background-image: url(img/doctor-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(6, 41, 61);
+    border-radius: 5px;
+    background-color: #4a6fb341;
+}
+form{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#data{
+    color: #091e4d;
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+}
+label{
+    color: #091e4d;
+    font-size: 1.2rem;
+    margin: 3px;
+    font-weight: 500;
+}
+select{
+    color: #091e4d;
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+}
+input{
+    margin: 0px;
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #ffffff6c;
+}
+::placeholder{
+    color: #091e4d;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: #153375;
+    font-size: 2.5rem;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: #153375;
+    color: #ffffff;
+    font-size:14px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: #091e4d;
+    transition: 1s;
+
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+    .close:hover{
+        color: #000;
+        transition: 1.2s;
+    }
+
+
+@media (max-width: 768px){
+    body{
+    background-image: url(img/CLINICA\ Doctor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    .container{
+        width: 90%;
+        height: 90vh;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: rgba(17, 17, 17, 0.212);
+    }
+    label{
+        color: #0c1157;
+    }
+    input, select, button{
+        font-size: 18px;
+        padding: 12px;
+    }
+    h1{
+        font-size: 30px;
+        color: #0c1157;
+    }
+    button{
+        width: 90%;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1024px){
+    .container{
+        width: 60%;
+        max-width: 600px;
+        padding: 20px;
+    }
+    input, select, button{
+        font-size: 16px;
+        padding: 10px;
+    }
+    h1{
+        font-size: 2rem;
+        color: #0c1157;
+    }
+}

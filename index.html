@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agendamento de Consulta</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Agendar Consulta</h1>
+        <form id="form-agendamento">
+            <label for="data">Data da Consulta</label>
+            <input type="date" name="data" id="data" required placeholder="Digite a data da consulta">
+             
+            <label for="">Horário Disponível</label>
+            <select name="horario" id="horario" required>
+                <option value="">Selecione uma data</option>
+            </select>
+
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" required placeholder="Digite seu telefone">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+
+            <button type="submit">Confirmar Agendamento</button>
+        </form>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="modal-message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
